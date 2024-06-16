@@ -23,11 +23,11 @@ function Widgets() {
             <h2>Linkedin news</h2>
             <InfoIcon />
         </div>
-        {newsArticle('Sif eddine is the best', 'Top news - 999 readers')}
-        {newsArticle('Sif eddine is the best is the best', 'Top news - 999 readers')}
-        {newsArticle('Sif eddine is is is isis isis is I', 'Top news - 999 readers')}
-        {newsArticle('Sif eddine is is the best is the the best', 'Top news - 999 readers')}
-        {newsArticle('Sif eddine is the best', 'Top news - 999 readers')}
+        {newsArticle("L'équipe Allemande a ouvert la compétition avec une large victoire", 'EURO 2024')}
+        {newsArticle("L'équipe Italienne a gagné son premier match avec difficulté", 'EURO 2024')}
+        {newsArticle("L'ESPAGNE on fire", 'EURO 2024')}
+        {newsArticle("Petite victoire pour la Suisse", 'EURO 2024')}
+        {newsArticle("Le Maroc a récupéré son eau de visage contre les Congolais, 6-0", 'EURO 2024')}
     </div>
   )
 }
