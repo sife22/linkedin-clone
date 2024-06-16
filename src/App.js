@@ -22,7 +22,7 @@ function App() {
           email: userAuth.email,
           uid: userAuth.uid,
           displayName: userAuth.displayName,
-          photoUrl: userAuth.photoUrl,
+          photoURL: userAuth.photoURL,
         }))
       } else {
         // L'utilisateur n'est pas connecté

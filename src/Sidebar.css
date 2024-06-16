@@ -79,7 +79,8 @@
 
 .sidebar__bottom > p {
     margin-bottom: 10px;
-    font-size: 13px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .sidebar__hash {

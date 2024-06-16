@@ -37,7 +37,7 @@ function Feed() {
             name: user.displayName,
             description: user.email,
             message: input,
-            photoUrl: user.photoUrl || "",
+            photoURL: user.photoURL || "",
             timestamp: firebase.firestore.FieldValue.serverTimestamp()
         })
 
@@ -65,8 +65,8 @@ function Feed() {
             </div>
             <div className='feed_posts'>
                 <FlipMove>
-                {posts && posts.map(({ id, data: { name, message, description, photoUrl } }) => (
-                    <Post key={id} name={name} description={description} message={message} photoUrl={photoUrl} />
+                {posts && posts.map(({ id, data: { name, message, description, photoURL } }) => (
+                    <Post key={id} name={name} description={description} message={message} photoURL={photoURL} />
                 ))}
                 </FlipMove>
             </div>

@@ -19,7 +19,7 @@ function Sidebar() {
         <div className='sidebar'>
             <div className='sidebar__top'>
                 <img src='https://e0.pxfuel.com/wallpapers/833/722/desktop-wallpaper-dual-screen-android-dual-screen-background-space-dual-screen.jpg' alt='' />
-                <Avatar className='sidebar__avatar' src={user.photoUrl}>
+                <Avatar className='sidebar__avatar' src={user.photoURL}>
                     {/* Si il y a de photo, on affiche le premier lettre de son mail */}
                     {user.email[0]}
                 </Avatar>

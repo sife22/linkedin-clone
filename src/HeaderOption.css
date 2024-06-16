@@ -21,3 +21,7 @@
     font-size: 12px;
     font-weight: 400;
 }
+
+.logout__title:hover {
+    color: red;
+}
