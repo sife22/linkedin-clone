@@ -57,6 +57,10 @@ function Login() {
         <div className='login'>
             <img src='https://upload.wikimedia.org/wikipedia/commons/1/19/LinkedIn_logo.svg' alt='' />
             <form>
+
+            <br></br>
+                <p>If you have already account, push your email and password directly</p>
+                <br></br>
                 <input type='text'
                 value={name}
                 onChange={(e) => setName(e.target.value)} 
@@ -66,6 +70,8 @@ function Login() {
                 value={profilePic} 
                 onChange={(e) => setProfilePic(e.target.value)} 
                 placeholder='Profil picture URL : ' />
+                
+                
 
                 <input type='text' 
                 value={email} 
