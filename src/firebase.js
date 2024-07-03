@@ -4,12 +4,12 @@ import 'firebase/compat/firestore';
 
 // On colle notre json de configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCBAC0igwF6k0rx95E8NsV8WxwbqiQfl_0",
-    authDomain: "linkedin-clone-1ae69.firebaseapp.com",
-    projectId: "linkedin-clone-1ae69",
-    storageBucket: "linkedin-clone-1ae69.appspot.com",
-    messagingSenderId: "186104763354",
-    appId: "1:186104763354:web:76f4663356ef83eb4e66e3"
+    apiKey: `${process.env.REACT_APP_FIREBASE_API_KEY}`,
+    authDomain: `${process.env.REACT_APP_FIREBASE_AUTH_DOMAIN}`,
+    projectId: `${process.env.REACT_APP_FIREBASE_PROJECT_ID}`,
+    storageBucket: `${process.env.REACT_APP_FIREBASE_STORAGE_BUCKET}`,
+    messagingSenderId: `${process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID}`,
+    appId: `${process.env.REACT_APP_FIREBASE_APP_ID}`
 };
 
 // On configure notre application avec firebase

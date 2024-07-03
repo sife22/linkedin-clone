@@ -1,46 +1,37 @@
-# Getting Started with Create React App and Redux
+# LinkedIn Clone
+Une application de clone de LinkedIn construite avec React.js, Redux et Firebase.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Description
+Ce projet est une application de clone de LinkedIn qui permet aux utilisateurs de créer un compte, de se connecter, de publier des publications.
 
-## Available Scripts
+## Fonctionnalités
+- Authentification avec Firebase (inscription, connexion, déconnexion)
+- Création et publication de publications
 
-In the project directory, you can run:
+## Installation et configuration
+1. Clonez le dépôt Git :
 
-### `npm start`
+   ```bash
+   git clone https://github.com/sife22/linkedin-clone.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Accédez au répertoire du projet :
+   cd linkedin-clone
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Installez les dépendances :
+   npm install
 
-### `npm test`
+4. Configurez les variables d'environnement Firebase dans un fichier '.env' à la racine du projet :
+   REACT_APP_FIREBASE_API_KEY=your-firebase-api-key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your-firebase-auth-domain
+   REACT_APP_FIREBASE_PROJECT_ID=your-firebase-project-id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your-firebase-storage-bucket
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-firebase-messaging-sender-id
+   REACT_APP_FIREBASE_APP_ID=your-firebase-app-id
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Démarrez l'application en mode développement :
+   npm start
 
-### `npm run build`
+   L'application sera accessible à l'adresse `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Déploiement
+L'application a été déployée sur Vercel et est accessible à l'adresse : https://linkedin-clone-git-main-sife22s-projects.vercel.app/
