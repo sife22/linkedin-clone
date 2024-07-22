@@ -32,8 +32,8 @@ function Login() {
     }
 
     const register = () => {
-        if(!name){
-            return alert('Please enter a full name')
+        if(!name || !email || !password){
+            return alert('Make sure to enter all the necessary information (Full Name, Email, Password)')
         }
 
         auth.createUserWithEmailAndPassword(email, password)
@@ -59,7 +59,7 @@ function Login() {
             <form>
 
             <br></br>
-                <p>If you have already account, push your email and password directly</p>
+                <h3>If you have already created an account, enter your email and password directly.</h3>
                 <br></br>
                 <input type='text'
                 value={name}
@@ -85,7 +85,7 @@ function Login() {
 
                 <button type='submit' onClick={loginToApp}>Sign in</button>
             </form>
-            <p>Not a member?
+            <p>The first time?
                 <span onClick={register} className='login__register'> Register now</span>
             </p>
         </div>
