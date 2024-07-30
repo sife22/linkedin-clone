@@ -1,17 +1,15 @@
 # LinkedIn Clone
-Une application de clone de LinkedIn construite avec React.js, Redux et Firebase.
+Une application de clone de LinkedIn construite en utilisant ReactJs, Redux et Firebase.
 
 ## Description
 Ce projet est une application de clone de LinkedIn qui permet aux utilisateurs de créer un compte, de se connecter, de publier des publications.
 
 ## Fonctionnalités
 - Authentification avec Firebase (inscription, connexion, déconnexion)
-- Création et publication de publications
+- Création et partage de publications
 
 ## Installation et configuration
 1. Clonez le dépôt Git :
-
-   ```bash
    git clone https://github.com/sife22/linkedin-clone.git
 
 2. Accédez au répertoire du projet :
@@ -34,4 +32,4 @@ Ce projet est une application de clone de LinkedIn qui permet aux utilisateurs d
    L'application sera accessible à l'adresse `http://localhost:3000`.
 
 ## Déploiement
-L'application a été déployée sur Vercel et est accessible à l'adresse : https://linkedin-clone-seven-zeta.vercel.app/
+L'application a été déployée sur Netlify et est accessible à l'adresse : https://linkedin.netlify.app/
