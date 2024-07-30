@@ -6,7 +6,7 @@ Ce projet est une application de clone de LinkedIn qui permet aux utilisateurs d
 
 ## Fonctionnalités
 - Authentification avec Firebase (inscription, connexion, déconnexion)
-- Création et partage de publications
+- Création de publications
 
 ## Installation et configuration
 1. Clonez le dépôt Git :
@@ -19,12 +19,12 @@ Ce projet est une application de clone de LinkedIn qui permet aux utilisateurs d
    npm install
 
 4. Configurez les variables d'environnement Firebase dans un fichier '.env' à la racine du projet :
-   REACT_APP_FIREBASE_API_KEY=your-firebase-api-key
-   REACT_APP_FIREBASE_AUTH_DOMAIN=your-firebase-auth-domain
-   REACT_APP_FIREBASE_PROJECT_ID=your-firebase-project-id
-   REACT_APP_FIREBASE_STORAGE_BUCKET=your-firebase-storage-bucket
-   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-firebase-messaging-sender-id
-   REACT_APP_FIREBASE_APP_ID=your-firebase-app-id
+   - REACT_APP_FIREBASE_API_KEY=your-firebase-api-key
+   - REACT_APP_FIREBASE_AUTH_DOMAIN=your-firebase-auth-domain
+   - REACT_APP_FIREBASE_PROJECT_ID=your-firebase-project-id
+   - REACT_APP_FIREBASE_STORAGE_BUCKET=your-firebase-storage-bucket
+   - REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-firebase-messaging-sender-id
+   - REACT_APP_FIREBASE_APP_ID=your-firebase-app-id
 
 5. Démarrez l'application en mode développement :
    npm start
