@@ -32,4 +32,4 @@ Ce projet est une application de clone de LinkedIn qui permet aux utilisateurs d
    L'application sera accessible à l'adresse `http://localhost:3000`.
 
 ## Déploiement
-L'application a été déployée sur Netlify et est accessible à l'adresse : https://linkedin.netlify.app/
+L'application a été déployée sur Vercel et est accessible à l'adresse : https://linkedin-clone-flame-seven.vercel.app/
