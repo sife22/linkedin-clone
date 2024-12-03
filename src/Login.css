@@ -23,17 +23,17 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.login > form > button {
+.login > form > .div_buttons > button {
     padding: 10px;
     font-size: 20px;
     border-radius: 5px;
-    margin: 3px;
+    margin: 10px;
     background-color: lightgray;
     border: 1px solid lightgray;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.login > form > button:hover {
+.login > form > .div_buttons > button:hover {
     cursor: pointer;
     color: dodgerblue;
     background-color: whitesmoke;
@@ -48,4 +48,11 @@
 .login__register {
     color: dodgerblue;
     cursor: pointer;
+}
+
+.div_buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 75px;
 }

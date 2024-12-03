@@ -18,76 +18,75 @@ function Login() {
     const loginToApp = (e) => {
         e.preventDefault();
         auth.signInWithEmailAndPassword(email, password)
-        .then(
-            (userAuth)=>{
-                dispatch(login({
-                    email: userAuth.user.email,
-                    uid: userAuth.user.uid,
-                    displayName: userAuth.user.displayName,
-                    photoURL: userAuth.user.photoURL,
+            .then(
+                (userAuth) => {
+                    dispatch(login({
+                        email: userAuth.user.email,
+                        uid: userAuth.user.uid,
+                        displayName: userAuth.user.displayName,
+                        photoURL: userAuth.user.photoURL,
+                    }
+                    ))
                 }
-                ))
-            }
-        ).catch((error)=>alert(error));
+            ).catch((error) => alert(error));
     }
 
     const register = () => {
-        if(!name || !email || !password){
+        if (!name || !email || !password) {
             return alert('Make sure to enter all the necessary information (Full Name, Email, Password)')
         }
 
         auth.createUserWithEmailAndPassword(email, password)
-        .then((userAuth)=>{
-            userAuth.user
-                .updateProfile({
-                displayName: name,
-                photoURL: profilePic,
-            })
-            .then(()=>{
-                dispatch(login({
-                    email: userAuth.user.email,
-                    uid: userAuth.user.uid,
-                    displayName: name,
-                    photoURL: profilePic,
-                }))
-            })
-        }).catch((error)=>alert(error));
+            .then((userAuth) => {
+                userAuth.user
+                    .updateProfile({
+                        displayName: name,
+                        photoURL: profilePic,
+                    })
+                    .then(() => {
+                        dispatch(login({
+                            email: userAuth.user.email,
+                            uid: userAuth.user.uid,
+                            displayName: name,
+                            photoURL: profilePic,
+                        }))
+                    })
+            }).catch((error) => alert(error));
     }
     return (
         <div className='login'>
             <img src='https://upload.wikimedia.org/wikipedia/commons/1/19/LinkedIn_logo.svg' alt='' />
             <form>
 
-            <br></br>
-                <h3>If you have already created an account, enter your email and password directly.</h3>
+                <br></br>
                 <br></br>
                 <input type='text'
-                value={name}
-                onChange={(e) => setName(e.target.value)} 
-                placeholder='Full name : ' />
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder='Full name : ' />
 
-                <input type='text' 
-                value={profilePic} 
-                onChange={(e) => setProfilePic(e.target.value)} 
-                placeholder='Profil picture URL : ex : https://website/img.png ' />
-                
-                
+                <input type='text'
+                    value={profilePic}
+                    onChange={(e) => setProfilePic(e.target.value)}
+                    placeholder='Profil picture URL : ex : https://website/img.png ' />
 
-                <input type='text' 
-                value={email} 
-                onChange={(e) => setEmail(e.target.value)} 
-                placeholder='Email : ' />
+                <br></br>
 
-                <input type='password' 
-                value={password} 
-                onChange={(e) => setPassword(e.target.value)} 
-                placeholder='Password : ' />
+                <input type='text'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder='Email : ' />
 
-                <button type='submit' onClick={loginToApp}>Sign in</button>
+                <input type='password'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder='Password : ' />
+
+                <div className='div_buttons'>
+                    <button type='submit' onClick={loginToApp}>Login</button>
+                    <button type='submit' onClick={register}>Register</button>
+                </div>
             </form>
-            <p>The first time?
-                <span onClick={register} className='login__register'> Register now</span>
-            </p>
         </div>
     )
 }
