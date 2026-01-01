@@ -27,7 +27,6 @@ function Widgets() {
         {newsArticle("L'équipe Italienne a gagné son premier match avec difficulté", 'EURO 2024')}
         {newsArticle("L'ESPAGNE on fire", 'EURO 2024')}
         {newsArticle("Petite victoire pour la Suisse", 'EURO 2024')}
-        {newsArticle("Le Maroc a récupéré son eau de visage contre les Congolais, 6-0", 'Qualification africaine')}
     </div>
   )
 }
