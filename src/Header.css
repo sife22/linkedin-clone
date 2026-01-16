@@ -3,7 +3,7 @@
     top: 0;
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 0.1px solid lightblue;
+    /* border-bottom: 0.1px solid lightblue; */
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: white;
@@ -13,6 +13,13 @@
 
 .header__left {
     display: flex;
+    padding-top: 50px;
+    p {
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+        font-family: "Georgia", serif;
+        color: black;
+    }
 }
 
 .header__left > img {

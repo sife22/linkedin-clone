@@ -25,16 +25,17 @@ function Header() {
   return (
     <div className='header'>
       <div className='header__left'>
-        <img src='https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg' alt='' />
+        <p>This website is taking a short break. We'll be back soon!</p>
+        {/* <img src='https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg' alt='' />
         {user ? (
         <div className='header__search'>
           <SearchIcon />
           <input type='text' />
         </div>
-        ) : ''}
+        ) : ''} */}
       </div>
 
-      {user ? (
+      {/* {user ? (
         <div className='header__right'>
           <HeaderOption Icon={HomeIcon} title='Home' />
           <HeaderOption Icon={Diversity1Icon} title='My network' />
@@ -43,7 +44,7 @@ function Header() {
           <HeaderOption Icon={NotificationsIcon} title='Notifications' />
           <HeaderOption avatar={true} title={`${user ? 'Logout' : 'LinkedIn'}`} onClick={logoutOfApp} />
         </div>
-      ) : ''}
+      ) : ''} */}
     </div>
   )
 }
